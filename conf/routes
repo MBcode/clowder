@@ -173,6 +173,8 @@ POST           /spaces/submit                                                   
 # ----------------------------------------------------------------------
 GET            /extractors/labels                                                       @controllers.Extractors.manageLabels()
 GET            /extractors/:extractorName                                               @controllers.Extractors.showExtractorInfo(extractorName)
+GET            /extractors/:extractorName/metrics                                       @controllers.Extractors.showExtractorMetrics(extractorName)
+GET            /extractors/:extractorName/logs                                          @controllers.Extractors.showExtractorLog(extractorName)
 GET            /extractors/:extractorName/history                                       @controllers.Extractors.showJobHistory(extractorName)
 
 
